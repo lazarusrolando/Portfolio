@@ -23,12 +23,21 @@
                 <span class="logo-text">Python Full Stack Development</span>
             </h1>
             <nav>
-                <a href="#hero" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#vibecoding" class="nav-link">Vibe Coding</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#courses" class="nav-link">Courses</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <div class="dropdown">
+                    <div class="menu-icon" onclick="toggleDropdown(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <div class="dropdown-content" id="nav-links">
+                        <a href="#hero" class="nav-link">Home</a>
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#courses" class="nav-link">Courses</a>
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#vibecoding" class="nav-link">Vibe Coding</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -39,7 +48,8 @@
                     alt="Modern Mart">
             </div>
             <h2 class="hero-title animate-fade-in">Hi, I'm <span>R. Lazarus Rolando</span></h2>
-            <p class="hero-subtitle animate-fade-in">Aspiring software developer with a strong foundation in both
+            <p class="hero-subtitle animate-fade-in">
+                Aspiring software developer with a strong foundation in both
                 front-end and back-end
                 technologies.
             </p>
@@ -51,7 +61,6 @@
                 interactive, and aesthetic coding experiences blending creativity, modern web tools, and dynamic
                 visuals.</p>
             <a href="#projects" class="btn hero-btn animate-fade-in">View My Work</a>
-            <!-- INSERT_YOUR_CODE -->
             <div class="hero-socials animate-fade-in" style="margin-top: 1.5rem; animation-delay: 0.6s;">
                 <a href="https://github.com/lr19-boy" target="_blank" rel="noopener" aria-label="GitHub"
                     style="margin: 0 0.5rem; display: inline-block; font-weight: 600; text-decoration: none; color: black; animation-delay: 0.7s;"><i
@@ -64,7 +73,7 @@
         </div>
     </section>
     <main>
-        <section id="about" class="section animate-fade-in">
+        <section id="about" class="section animate-fade-in" style="background:#a3cef1;">
             <div class="container">
                 <h2 style="text-decoration: underline;" class="animate-fade-in" style="animation-delay: 0.2s;">About Me
                 </h2>
@@ -100,39 +109,18 @@
                 </h3>
             </div>
         </section>
-        <section id="vibecoding" class="section animate-fade-in">
+        <section id="courses" class="section animate-fade-in" style="background: #a3cef1;">
             <div class="container">
-                <h2 class="animate-fade-in" style="animation-delay: 0.2s; text-decoration: underline;">Vibe Coding</h2>
-                <p class="animate-fade-in" style="animation-delay: 0.3s; font-weight: 600; text-align: center;">Vibe
-                    Coding is rapidly becoming a cornerstone in IT industries, driving innovation, enhancing developer
-                    satisfaction, and shaping the culture of modern software teams worldwide.</p>
-                <p class="animate-fade-in" style="animation-delay: 0.3s; text-align: center;">This is my <b>IMPORTANT
-                        TOPIC IN MY CARRER</b></p>
-                <br>
-                <h3 class="animate-fade-in" style="animation-delay: 0.4s;">What is Vibe Coding?</h3>
-                <p class="animate-fade-in" style="animation-delay: 0.5s;">Vibe Coding is a modern approach to software
-                    development that emphasizes expressive, interactive, and aesthetic coding experiences. It blends
-                    creativity, modern web tools, and dynamic visuals to make coding more engaging and productive for
-                    developers and teams.</p>
-                    <br>
-                <h3 class="animate-fade-in" style="animation-delay: 0.6s;">Who developed Vibe Coding?</h3>
-                <p class="animate-fade-in" style="animation-delay: 0.7s;">Vibe coding is an artificial
-                    intelligence-assisted software development style popularized by Andrej Karpathy in early 2025.[1] It
-                    describes a fast, improvisational, collaborative approach to creating software where the developer
-                    and a large language model (LLM) tuned for coding are acting rather like pair programmers in a
-                    conversational loop. Unlike traditional AI-assisted coding or prompt engineering, vibe coding
-                    emphasizes staying in a creative flow: the human developer avoids micromanaging the code, accepts
-                    AI-suggested completions liberally, and focuses more on iterative experimentation than code
-                    correctness or structure.</p>
-                    <br>
-                <h3 class="animate-fade-in" style="animation-delay: 0.8s;">Purpose of Vibe Coding?</h3>
-                <p class="animate-fade-in" style="animation-delay: 0.9s;">The purpose of Vibe Coding is to foster
-                    innovation, collaboration, and enjoyment in software development. By focusing on creativity and
-                    dynamic user experiences, Vibe Coding aims to make coding not just a technical task, but an
-                    inspiring and fulfilling activity for developers in all IT sectors.</p>
+                <h2 style="text-decoration: underline; text-align:center;" class="animate-fade-in"
+                    style="animation-delay: 0.2s;">Courses</h2>
+                <div style="text-align: center;">
+                    <img class="animate-zoom-in"
+                        src="https://cdn.discordapp.com/attachments/1158779907661385878/1393843218633850900/02b4fca3-56cd-4e53-a16c-b5276b9d4a14.jpg?ex=6874a527&is=687353a7&hm=708b6c2136cdd1c154a560548c8a13ff6f83c6dfa6946e19714c9aa666526cf5&"
+                        alt="">
+                </div>
             </div>
         </section>
-        <section id="projects" class="section animate-fade-in">
+        <section id="projects" class="section animate-fade-in" style="background:#a3cef1;">
             <div class="container">
                 <h2 style="text-decoration: underline;" class="animate-fade-in" style="animation-delay: 0.2s;">Projects
                 </h2>
@@ -171,18 +159,39 @@
                 </div>
             </div>
         </section>
-        <section id="courses" class="section animate-fade-in">
+        <section id="vibecoding" class="section animate-fade-in" style="background:#a3cef1;">
             <div class="container">
-                <h2 style="text-decoration: underline; text-align:center;" class="animate-fade-in"
-                    style="animation-delay: 0.2s;">Courses</h2>
-                <div style="text-align: center;">
-                    <img class="animate-zoom-in"
-                        src="https://cdn.discordapp.com/attachments/1158779907661385878/1393843218633850900/02b4fca3-56cd-4e53-a16c-b5276b9d4a14.jpg?ex=6874a527&is=687353a7&hm=708b6c2136cdd1c154a560548c8a13ff6f83c6dfa6946e19714c9aa666526cf5&"
-                        alt="">
-                </div>
+                <h2 class="animate-fade-in" style="animation-delay: 0.2s; text-decoration: underline;">Vibe Coding</h2>
+                <p class="animate-fade-in" style="animation-delay: 0.3s; font-weight: 600; text-align: center;">Vibe
+                    Coding is rapidly becoming a cornerstone in IT industries, driving innovation, enhancing developer
+                    satisfaction, and shaping the culture of modern software teams worldwide.</p>
+                <p class="animate-fade-in" style="animation-delay: 0.3s; text-align: center;">This is my <b>IMPORTANT
+                        TOPIC IN MY CARRER</b></p>
+                <br>
+                <h3 class="animate-fade-in" style="animation-delay: 0.4s;">What is Vibe Coding?</h3>
+                <p class="animate-fade-in" style="animation-delay: 0.5s;">Vibe Coding is a modern approach to software
+                    development that emphasizes expressive, interactive, and aesthetic coding experiences. It blends
+                    creativity, modern web tools, and dynamic visuals to make coding more engaging and productive for
+                    developers and teams.</p>
+                <br>
+                <h3 class="animate-fade-in" style="animation-delay: 0.6s;">Who developed Vibe Coding?</h3>
+                <p class="animate-fade-in" style="animation-delay: 0.7s;">Vibe coding is an artificial
+                    intelligence-assisted software development style popularized by Andrej Karpathy in early 2025. It
+                    describes a fast, improvisational, collaborative approach to creating software where the developer
+                    and a large language model (LLM) tuned for coding are acting rather like pair programmers in a
+                    conversational loop. Unlike traditional AI-assisted coding or prompt engineering, vibe coding
+                    emphasizes staying in a creative flow: the human developer avoids micromanaging the code, accepts
+                    AI-suggested completions liberally, and focuses more on iterative experimentation than code
+                    correctness or structure.</p>
+                <br>
+                <h3 class="animate-fade-in" style="animation-delay: 0.8s;">Purpose of Vibe Coding?</h3>
+                <p class="animate-fade-in" style="animation-delay: 0.9s;">The purpose of Vibe Coding is to foster
+                    innovation, collaboration, and enjoyment in software development. By focusing on creativity and
+                    dynamic user experiences, Vibe Coding aims to make coding not just a technical task, but an
+                    inspiring and fulfilling activity for developers in all IT sectors.</p>
             </div>
         </section>
-        <section id="contact" class="section animate-fade-in">
+        <section id="contact" class="section animate-fade-in" style="background: linear-gradient(0deg, #639dee 0%, #a3cef1 100%);">
             <div class="container">
                 <h2 style="text-decoration: underline;" class="animate-fade-in" style="animation-delay: 0.2s;">Contact
                 </h2>
@@ -253,6 +262,19 @@
         }
         animateOnScroll('.animate-fade-in', 'fade-in-visible');
         animateOnScroll('.animate-zoom-in', 'zoom-in-visible');
+    </script>
+    <script>
+        function toggleDropdown(x) {
+            document.getElementById('nav-links').classList.toggle('show');
+            x.classList.toggle("change")
+        }
+        // Optional: close dropdown when clicking outside
+        window.onclick = function(event) {
+            if (!event.target.closest('.menu-icon') && !event.target.closest('.dropdown-content')) {
+                document.getElementById('nav-links').classList.remove('show');
+                document.querySelector('.menu-icon').classList.remove('change');
+            }
+        }
     </script>
 </body>
 
