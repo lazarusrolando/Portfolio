@@ -116,6 +116,11 @@ header h1 {
     text-align: center;
 }
 
+.section p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -243,13 +248,13 @@ footer {
     text-align: center;
     padding: 1.2rem 0;
     font-size: 1rem;
-    margin-top: 2rem;
+    margin-top: 0rem;
     letter-spacing: 1px;
 }
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(120deg, #a3cef1 0%, #639dee 100%);
+    background: linear-gradient(0deg, #a3cef1 0%, #639dee 100%);
     padding: 5rem 0 4rem 0;
     text-align: center;
     color: #232946;
@@ -377,4 +382,91 @@ footer {
 
 #about {
     text-align: justify;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  background: #232946;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border: 2px solid #eebf63;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.dropbtn:hover {
+  background: #eebf63;
+  color: #232946;
+}
+.hamburger {
+  font-size: 1.3em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 110%;
+  background: #232946;
+  min-width: 180px;
+  box-shadow: 0 8px 24px rgba(35,41,70,0.15);
+  border-radius: 8px;
+  border: 1px solid #eebf63;
+  z-index: 1000;
+}
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 18px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid rgba(238,191,99,0.12);
+  transition: background 0.2s, color 0.2s;
+}
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+.dropdown-content a:hover {
+  background: #eebf63;
+  color: #232946;
+}
+.show {
+  display: block;
+}
+.menu-icon {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.3s;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 2px;
+}
+.menu-icon.change .bar1 {
+  transform: translateY(11px) rotate(-45deg);
+}
+.menu-icon.change .bar2 {
+  opacity: 0;
+}
+.menu-icon.change .bar3 {
+  transform: translateY(-11px) rotate(45deg);
+}
+@media (max-width: 700px) {
+  .dropdown-content {
+    left: 0;
+    right: 0;
+    min-width: unset;
+    width: 100vw;
+    border-radius: 0 0 8px 8px;
+  }
 }
