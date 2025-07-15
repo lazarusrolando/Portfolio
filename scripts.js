@@ -47,8 +47,6 @@ function animateOnScroll(selector, visibleClass) {
     }, { threshold: 0.15 });
     document.querySelectorAll(selector).forEach(el => observer.observe(el));
 }
-animateOnScroll('.animate-fade-in', 'fade-in-visible');
-animateOnScroll('.animate-zoom-in', 'zoom-in-visible');
 
 function toggleDropdown(x) {
     document.getElementById('nav-links').classList.toggle('show');
